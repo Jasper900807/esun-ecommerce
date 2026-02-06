@@ -16,9 +16,6 @@ import com.esun.ecommerce.dto.response.ApiResponse;
 import com.esun.ecommerce.dto.response.ProductResponse;
 import com.esun.ecommerce.service.ProductService;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +24,6 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("/api/products")
 @RequiredArgsConstructor
 @Slf4j
-@Tag(name = "商品管理", description = "商品相關的 API")
 public class ProductController {
 
     private final ProductService productService;
@@ -46,7 +42,6 @@ public class ProductController {
      * }
      */
     @PostMapping
-    @Operation(summary = "新增商品", description = "管理員新增商品資料")
     public ResponseEntity<ApiResponse<ProductResponse>> createProduct(
             @Valid @RequestBody CreateProductRequest request) {
         
@@ -65,7 +60,6 @@ public class ProductController {
      * GET /api/products/available
      */
     @GetMapping("/available")
-    @Operation(summary = "查詢可用商品", description = "查詢庫存大於 0 的商品清單")
     public ResponseEntity<ApiResponse<List<ProductResponse>>> getAvailableProducts() {
         
         log.info("收到查詢可用商品請求");
@@ -83,7 +77,6 @@ public class ProductController {
      * GET /api/products
      */
     @GetMapping
-    @Operation(summary = "查詢所有商品", description = "查詢所有商品清單（含無庫存商品）")
     public ResponseEntity<ApiResponse<List<ProductResponse>>> getAllProducts() {
         
         log.info("收到查詢所有商品請求");
@@ -101,9 +94,7 @@ public class ProductController {
      * GET /api/products/{productId}
      */
     @GetMapping("/{productId}")
-    @Operation(summary = "查詢單一商品", description = "根據商品編號查詢商品詳情")
     public ResponseEntity<ApiResponse<ProductResponse>> getProductById(
-            @Parameter(description = "商品編號", example = "P001")
             @PathVariable String productId) {
         
         log.info("收到查詢商品請求，商品編號：{}", productId);

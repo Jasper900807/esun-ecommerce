@@ -14,7 +14,6 @@
 - **ORM**: Spring Data JPA + Hibernate
 - **API Style**: RESTful API
 - **Build Tool**: Maven
-- **Documentation**: Springdoc OpenAPI (Swagger)
 
 ## ✨ 核心功能
 
@@ -43,8 +42,7 @@ src/main/java/com/esun/ecommerce/
 ├── config/                    # 配置類
 │   ├── CorsConfig.java       # CORS 跨域設定
 │   ├── JacksonConfig.java    # JSON 序列化設定
-│   ├── WebSecurityConfig.java # 安全配置
-│   └── SwaggerConfig.java    # API 文檔配置
+│   └── WebSecurityConfig.java # 安全配置
 ├── controller/                # 控制器層
 │   ├── ProductController.java
 │   └── OrderController.java
@@ -127,9 +125,6 @@ java -jar target/ecommerce-1.0.0.jar
 應用將啟動在 `http://localhost:8080`
 
 ## 📡 API 文檔
-
-### Swagger UI
-啟動後訪問：`http://localhost:8080/swagger-ui.html`
 
 ### API 端點
 

@@ -148,9 +148,6 @@ npm run dev
 
 ## 📡 API 文檔
 
-### Swagger UI
-後端啟動後訪問：`http://localhost:8080/swagger-ui.html`
-
 ### 主要端點
 
 #### 商品 API
@@ -233,7 +230,7 @@ npm run dev
 
 ### API 測試
 
-使用 Swagger UI 或 Postman 測試 API 端點
+使用 Postman 測試 API 端點
 
 ## 📝 開發紀錄
 

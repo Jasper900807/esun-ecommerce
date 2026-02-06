@@ -16,9 +16,6 @@ import com.esun.ecommerce.dto.response.ApiResponse;
 import com.esun.ecommerce.dto.response.OrderResponse;
 import com.esun.ecommerce.service.OrderService;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +24,6 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("/api/orders")
 @RequiredArgsConstructor
 @Slf4j
-@Tag(name = "訂單管理", description = "訂單相關的 API")
 public class OrderController {
 
      private final OrderService orderService;
@@ -54,7 +50,6 @@ public class OrderController {
      * }
      */
     @PostMapping
-    @Operation(summary = "建立訂單", description = "顧客建立新訂單，系統會自動扣除商品庫存")
     public ResponseEntity<ApiResponse<OrderResponse>> createOrder(
             @Valid @RequestBody CreateOrderRequest request) {
         
@@ -75,7 +70,6 @@ public class OrderController {
      * GET /api/orders
      */
     @GetMapping
-    @Operation(summary = "查詢所有訂單", description = "查詢系統中所有訂單")
     public ResponseEntity<ApiResponse<List<OrderResponse>>> getAllOrders() {
         
         log.info("收到查詢所有訂單請求");
@@ -93,9 +87,7 @@ public class OrderController {
      * GET /api/orders/{orderId}
      */
     @GetMapping("/{orderId}")
-    @Operation(summary = "查詢單一訂單", description = "根據訂單編號查詢訂單詳情（含訂單明細）")
     public ResponseEntity<ApiResponse<OrderResponse>> getOrderById(
-            @Parameter(description = "訂單編號", example = "Ms20250206143055")
             @PathVariable String orderId) {
         
         log.info("收到查詢訂單請求，訂單編號：{}", orderId);
@@ -113,9 +105,7 @@ public class OrderController {
      * GET /api/orders/member/{memberId}
      */
     @GetMapping("/member/{memberId}")
-    @Operation(summary = "查詢會員訂單", description = "根據會員編號查詢該會員的所有訂單")
     public ResponseEntity<ApiResponse<List<OrderResponse>>> getOrdersByMemberId(
-            @Parameter(description = "會員編號", example = "12345")
             @PathVariable String memberId) {
         
         log.info("收到查詢會員訂單請求，會員編號：{}", memberId);

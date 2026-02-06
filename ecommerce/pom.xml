@@ -83,13 +83,6 @@
         <version>20220608.1</version>
     </dependency>
     
-    <!-- Springdoc OpenAPI - Swagger UI 文檔 (可選) -->
-    <dependency>
-        <groupId>org.springdoc</groupId>
-        <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-        <version>2.3.0</version>
-    </dependency>
-    
     <!-- Spring Boot Starter Test - 單元測試 -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
