@@ -2430,3 +2430,148 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time 
 2026-02-07 05:11:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2026-02-07 05:11:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2026-02-07 05:11:46 [SpringApplicationShutdownHook] INFO  com.esun.ecommerce.util.XssFilter - XSS 過濾器銷毀
+2026-02-07 05:28:11 [restartedMain] INFO  c.e.ecommerce.EcommerceApplication - Starting EcommerceApplication using Java 21.0.7 with PID 25736 (E:\project\esun-ecommerce\ecommerce\target\classes started by jaspe in E:\project\esun-ecommerce\ecommerce)
+2026-02-07 05:28:11 [restartedMain] DEBUG c.e.ecommerce.EcommerceApplication - Running with Spring Boot v3.5.10, Spring v6.2.15
+2026-02-07 05:28:11 [restartedMain] INFO  c.e.ecommerce.EcommerceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-07 05:28:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-07 05:28:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-07 05:28:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-07 05:28:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2026-02-07 05:28:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-07 05:28:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-07 05:28:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-07 05:28:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-07 05:28:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1562 ms
+2026-02-07 05:28:12 [restartedMain] INFO  com.esun.ecommerce.util.XssFilter - XSS 過濾器初始化
+2026-02-07 05:28:12 [restartedMain] DEBUG o.s.web.filter.CorsFilter - Filter 'corsFilter' configured for use
+2026-02-07 05:28:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-07 05:28:13 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-07 05:28:13 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-07 05:28:13 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-07 05:28:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-07 05:28:13 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e5927ce
+2026-02-07 05:28:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-07 05:28:13 [restartedMain] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.24 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-07 05:28:13 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-07 05:28:13 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.7.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-07 05:28:14 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-07 05:28:14 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07 05:28:14 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-07 05:28:15 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2026-02-07 05:28:15 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-02-07 05:28:15 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-07 05:28:15 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-07 05:28:15 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-07 05:28:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-07 05:28:16 [restartedMain] INFO  c.e.ecommerce.EcommerceApplication - Started EcommerceApplication in 5.45 seconds (process running for 5.921)
+2026-02-07 05:28:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07 05:28:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3839b192
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6cd4f80c
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-07 05:28:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products/available", parameters={}
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.esun.ecommerce.controller.ProductController#getAvailableProducts()
+2026-02-07 05:28:19 [http-nio-8080-exec-1] INFO  c.e.e.controller.ProductController - 收到查詢可用商品請求
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@1143074264 wrapping com.mysql.cj.jdbc.ConnectionImpl@4e5927ce] read-only
+2026-02-07 05:28:19 [http-nio-8080-exec-1] INFO  c.e.ecommerce.service.ProductService - 查詢所有可用商品
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    CALL sp_get_available_products()
+2026-02-07 05:28:19 [http-nio-8080-exec-1] INFO  c.e.ecommerce.service.ProductService - 查詢到 12 個可用商品
+2026-02-07 05:28:19 [http-nio-8080-exec-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1143074264 wrapping com.mysql.cj.jdbc.ConnectionImpl@4e5927ce]
+2026-02-07 05:28:20 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-02-07 05:28:20 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ApiResponse(success=true, message=查詢成功, data=[ProductResponse(productId=P001, productName=osii 舒壓按摩椅 (truncated)...]
+2026-02-07 05:28:20 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/orders", parameters={}
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.esun.ecommerce.controller.OrderController#createOrder(CreateOrderRequest)
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CreateOrderRequest(memberId=12345, items=[OrderItemRequest(productId=P001, quantity=1, price=98000), (truncated)...]
+2026-02-07 05:28:28 [http-nio-8080-exec-3] INFO  c.e.e.controller.OrderController - 收到建立訂單請求，會員編號：12345，商品數量：2
+2026-02-07 05:28:28 [http-nio-8080-exec-3] INFO  c.e.ecommerce.service.OrderService - 開始建立訂單，會員編號：12345，商品數量：2
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.product_id,
+        p1_0.created_at,
+        p1_0.price,
+        p1_0.product_name,
+        p1_0.quantity,
+        p1_0.updated_at 
+    from
+        product p1_0 
+    where
+        p1_0.product_id=?
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.product_id,
+        p1_0.created_at,
+        p1_0.price,
+        p1_0.product_name,
+        p1_0.quantity,
+        p1_0.updated_at 
+    from
+        product p1_0 
+    where
+        p1_0.product_id=?
+2026-02-07 05:28:28 [http-nio-8080-exec-3] INFO  c.e.ecommerce.service.OrderService - 生成訂單編號：Ms20260207052828
+2026-02-07 05:28:28 [http-nio-8080-exec-3] INFO  c.e.ecommerce.service.OrderService - 訂單項目 JSON：[{"quantity":1,"productId":"P001","price":98000},{"quantity":1,"productId":"P002","price":1200}]
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    CALL sp_create_order(?, ?, ?)
+2026-02-07 05:28:28 [http-nio-8080-exec-3] INFO  c.e.ecommerce.service.OrderService - 訂單建立成功，訂單編號：Ms20260207052828
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        o1_0.order_id,
+        o1_0.created_at,
+        o1_0.member_id,
+        od1_0.order_id,
+        od1_0.order_item_sn,
+        od1_0.created_at,
+        od1_0.item_price,
+        od1_0.product_id,
+        od1_0.quantity,
+        od1_0.stand_price,
+        o1_0.pay_status,
+        o1_0.total_price,
+        o1_0.updated_at 
+    from
+        `order` o1_0 
+    left join
+        order_detail od1_0 
+            on o1_0.order_id=od1_0.order_id 
+    where
+        o1_0.order_id=?
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.product_id,
+        p1_0.created_at,
+        p1_0.price,
+        p1_0.product_name,
+        p1_0.quantity,
+        p1_0.updated_at 
+    from
+        product p1_0 
+    where
+        p1_0.product_id=?
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.product_id,
+        p1_0.created_at,
+        p1_0.price,
+        p1_0.product_name,
+        p1_0.quantity,
+        p1_0.updated_at 
+    from
+        product p1_0 
+    where
+        p1_0.product_id=?
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ApiResponse(success=true, message=訂單建立成功, data=OrderResponse(orderId=Ms20260207052828, memberId=1234 (truncated)...]
+2026-02-07 05:28:28 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
