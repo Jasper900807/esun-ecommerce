@@ -1,3 +1,8 @@
+-- ============================================
+-- E.SUN Bank E-Commerce Database Schema
+-- ============================================
+
+-- 建立資料庫
 CREATE DATABASE IF NOT EXISTS esun_ecommerce
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
@@ -5,10 +10,15 @@ COLLATE utf8mb4_unicode_ci;
 USE esun_ecommerce;
 
 -- ============================================
+-- 刪除資料表（注意順序：先刪除子表，再刪除父表）
+-- ============================================
+DROP TABLE IF EXISTS order_detail;  -- 先刪除子表
+DROP TABLE IF EXISTS `order`;       -- 再刪除父表
+DROP TABLE IF EXISTS product;       -- 最後刪除
+
+-- ============================================
 -- 1. Product 商品表
 -- ============================================
-DROP TABLE IF EXISTS product;
-
 CREATE TABLE product (
     product_id VARCHAR(50) PRIMARY KEY COMMENT '商品編號',
     product_name VARCHAR(200) NOT NULL COMMENT '商品名稱',
@@ -23,8 +33,6 @@ CREATE TABLE product (
 -- ============================================
 -- 2. Order 訂單表
 -- ============================================
-DROP TABLE IF EXISTS `order`;
-
 CREATE TABLE `order` (
     order_id VARCHAR(50) PRIMARY KEY COMMENT '訂單編號',
     member_id VARCHAR(50) NOT NULL COMMENT '會員編號',
@@ -40,8 +48,6 @@ CREATE TABLE `order` (
 -- ============================================
 -- 3. OrderDetail 訂單明細表
 -- ============================================
-DROP TABLE IF EXISTS order_detail;
-
 CREATE TABLE order_detail (
     order_item_sn BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT '訂單明細流水號',
     order_id VARCHAR(50) NOT NULL COMMENT '訂單編號',

@@ -6,7 +6,7 @@
       <div class="container">
         <p class="text-muted mb-0">
           © 2026 E.SUN Bank E-Commerce System | 
-          <a href="https://github.com/your-username/esun-ecommerce" target="_blank" class="text-decoration-none">
+          <a href="https://github.com/Jasper900807/esun-ecommerce" target="_blank" class="text-decoration-none">
             <i class="bi bi-github"></i> GitHub
           </a>
         </p>
