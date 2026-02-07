@@ -125,12 +125,6 @@ const apiClient = axios.create({
 - Navbar
 - Spinner
 
-## 📱 響應式設計
-
-- 支援桌面、平板、手機
-- Bootstrap Grid System
-- 自適應導航列
-
 ## 🛒 購物車功能
 
 ### Pinia Store
@@ -296,8 +290,6 @@ server {
 $primary: #667eea;
 $secondary: #764ba2;
 ```
-
-## 📸 截圖
 
 ### 商品管理頁面
 - 表單輸入
