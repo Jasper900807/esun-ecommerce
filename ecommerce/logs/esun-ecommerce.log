@@ -5007,3 +5007,15 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 2026-02-07 16:54:08 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2026-02-07 16:54:08 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ApiResponse(success=true, message=商品新增成功, data=ProductResponse(productId=P028, productName=惡意商品, pri (truncated)...]
 2026-02-07 16:54:08 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products/available", parameters={}
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.esun.ecommerce.controller.ProductController#getAvailableProducts()
+2026-02-07 16:57:58 [http-nio-8080-exec-10] INFO  c.e.e.controller.ProductController - 收到查詢可用商品請求
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@636585933 wrapping com.mysql.cj.jdbc.ConnectionImpl@552cf2a8] read-only
+2026-02-07 16:57:58 [http-nio-8080-exec-10] INFO  c.e.ecommerce.service.ProductService - 查詢所有可用商品
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    CALL sp_get_available_products()
+2026-02-07 16:57:58 [http-nio-8080-exec-10] INFO  c.e.ecommerce.service.ProductService - 查詢到 3 個可用商品
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@636585933 wrapping com.mysql.cj.jdbc.ConnectionImpl@552cf2a8]
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ApiResponse(success=true, message=查詢成功, data=[ProductResponse(productId=P002, productName=網友最愛起司蛋糕,  (truncated)...]
+2026-02-07 16:57:58 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
